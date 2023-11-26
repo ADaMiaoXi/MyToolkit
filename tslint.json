@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "noImplicitAny": false,
+        "target": "ES6",
+        "diagnostics": false,
+        "lib": [
+            "dom",
+            "es2015",
+            "es2017",
+            "dom.iterable",
+            "scripthost",
+            "esnext",
+            "esnext.asynciterable",
+            "esnext.array"
+        ],
+        "baseUrl": ".",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "esnext",
+        "declaration": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "noEmitOnError": true,
+        "strictPropertyInitialization": false,
+        "types": ["@types/jest", "jest", "jest-extended", "node", "react"]
+    },
+    "compileOnSave": true,
+    "buildOnSave": true,
+    "exclude": ["**/node_modules", "**/target"],
+    "filesGlob": ["**/*.ts", "**/*.tsx", "!node_modules/**", "!target/**"]
+}
