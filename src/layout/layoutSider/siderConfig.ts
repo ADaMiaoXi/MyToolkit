@@ -18,6 +18,16 @@ export const getItems = (navigate: NavigateFunction) => {
                             replace: false
                         })
                     }
+                },
+                {
+                    label: 'JSON Compare',
+                    key: 'JsonCompare',
+                    icon: React.createElement(MailOutlined),
+                    onClick: () => {
+                        navigate('jsontools/JsonCompare', {
+                            replace: false
+                        })
+                    }
                 }
             ]
         },

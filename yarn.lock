@@ -3528,6 +3528,18 @@ react-is@^18.2.0:
   resolved "https://registry.npmmirror.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-json-view-compare@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.npmmirror.com/react-json-view-compare/-/react-json-view-compare-2.0.2.tgz#7a947caae1a0e133b22e0e327e1ad44cf3929dec"
+  integrity sha512-we+OMLFR2FGqHeoqfubQnMhY5V4jLK15/cOnh7cj+v6v7XpizdJu4oSfbEwRWxvTzywSTqpBw/xL0kPZ2YkLIg==
+  dependencies:
+    react-json-viewer-cool "^2.0.0"
+
+react-json-viewer-cool@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/react-json-viewer-cool/-/react-json-viewer-cool-2.0.0.tgz#dbce44305899b083f76120eaa14e9f9c96a140b8"
+  integrity sha512-2bCC9szMbh9PEK5WmAv2253MwjWdK/58RCleqIqvtVjoFFCtWRPXKbe+uK6cxxGRrtCPFLJE+4H1+T+pUQltLQ==
+
 react-router-dom@^6.18.0:
   version "6.19.0"
   resolved "https://registry.npmmirror.com/react-router-dom/-/react-router-dom-6.19.0.tgz#ee807e36ae7dd954db7a3f770e38b7cc026c66a8"

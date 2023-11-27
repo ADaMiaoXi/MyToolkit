@@ -1,11 +1,15 @@
 import React from 'react'
-import {JsonSearch, Base64Conversion, UUIDGenerator} from '../pages'
+import {JsonSearch, JsonCompare ,Base64Conversion, UUIDGenerator} from '../pages'
 import {RouteObject} from 'react-router-dom'
 
 const routes: RouteObject[] = [
     {
         path: 'jsontools/JsonSearch',
         element: React.createElement(JsonSearch)
+    },
+    {
+        path: 'jsontools/JsonCompare',
+        element: React.createElement(JsonCompare)
     },
     {
         path: 'data/base64',
