@@ -57,6 +57,23 @@ export const getItems = (navigate: NavigateFunction) => {
                     }
                 },
             ]
+        },
+        {
+            key: `Code_Parser`,
+            icon: React.createElement(LaptopOutlined),
+            label: `Code Parser`,
+            children: [
+                {
+                    label: 'Code Formatter',
+                    key: 'CodeFormatter',
+                    icon: React.createElement(LaptopOutlined),
+                    onClick: () => {
+                        navigate('code/formatter', {
+                            replace: false
+                        })
+                    }
+                }
+            ]
         }
     ]
 }
