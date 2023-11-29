@@ -75,7 +75,7 @@ export const JsonCompare: FC = () => {
             </Row>
             <Row>
                 <Col span={11}>
-                    <span style={{display: isDataAValid ? 'none' : 'block',  color: 'red'}}>Old Data inValid!</span>
+                    <span style={{display: isDataAValid ? 'none' : 'block', color: 'red'}}>Old Data inValid!</span>
                 </Col>
                 <Col span={2}></Col>
                 <Col span={11}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {JsonSearch, JsonCompare ,Base64Conversion, UUIDGenerator} from '../pages'
+import {JsonSearch, JsonCompare ,Base64Conversion, UUIDGenerator, CodeFormatter} from '../pages'
 import {RouteObject} from 'react-router-dom'
 
 const routes: RouteObject[] = [
@@ -17,6 +17,10 @@ const routes: RouteObject[] = [
     },{
         path: 'data/uuid',
         element: React.createElement(UUIDGenerator)
+    },
+    {
+        path: 'code/formatter',
+        element: React.createElement(CodeFormatter)
     }
 ]
 

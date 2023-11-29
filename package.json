@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/lodash": "^4.14.202",
+    "@types/prettier": "2.2.1",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/uuid": "^9.0.7",
@@ -34,8 +35,11 @@
     "build": "cross-env NODE_ENV=production webpack --config ./webpack.config.js"
   },
   "dependencies": {
+    "@babel/parser": "^7.23.4",
+    "@uiw/react-codemirror": "^4.21.21",
     "antd": "^5.11.0",
     "lodash": "^4.17.21",
+    "prettier": "2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-json-view-compare": "^2.0.2",
