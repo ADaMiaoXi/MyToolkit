@@ -1,6 +1,9 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import {FC} from 'react'
 import CodeMirror from '@uiw/react-codemirror'
+import { javascript } from '@codemirror/lang-javascript';
+import { html } from '@codemirror/lang-html';
+import { json } from '@codemirror/lang-json';
 import prettier from 'prettier/standalone'
 import parserBabel from 'prettier/parser-babel'
 import parserHTML from 'prettier/parser-html'
@@ -11,20 +14,24 @@ import './codeFormatter.less'
 
 const pasers: {[key: string]: any} = {
     'JSON': {
-        parser: 'json5',
-        plugins: [parserBabel]
+        parser: 'json',
+        plugins: [parserBabel],
+        extensions: [json()]
     },
     'JavaScript': {
         parser: 'babel',
-        plugins: [parserBabel]
+        plugins: [parserBabel],
+        extensions: [javascript({ jsx: true })]
     },
     'html': {
         parser: 'html',
-        plugins: [parserHTML]
+        plugins: [parserHTML],
+        extensions: [html()]
     },
     'TypeScript': {
         parser: 'typescript',
-        plugins: [parserTypescript]
+        plugins: [parserTypescript],
+        extensions: [javascript({ jsx: true })]
     }
 }
 
@@ -71,8 +78,9 @@ export const CodeFormatter: FC = () => {
                     formatCode(v)
                 }}
                 defaultChecked={true}
-                minHeight={'200px'}
+                height={'300px'}
                 theme={"dark"}
+                extensions={pasers[language].extensions}
             />
             <div style={{color: 'red'}}>{errMsg}</div>
             <Radio.Group
@@ -88,7 +96,7 @@ export const CodeFormatter: FC = () => {
                 <Radio value={'html'}>HTML</Radio>
             </Radio.Group>
 
-            <CodeMirror value={outPutCode} editable={false} />
+            <CodeMirror value={outPutCode} minHeight='300px' theme={"dark"} editable={false} extensions={pasers[language].extensions}/>
         </>
     )
 }
